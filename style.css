@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+.calculator-box{
+    height: 33rem;
+    width: 20rem;
+    margin-top: 5rem;
+    background-color: #071952;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem gray;
+}
+.result{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 6rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 18rem;
+    overflow: auto;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.button-box{
+    display: grid;
+    height: 23rem;
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 1rem auto;
+}
+.btns{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #141E46;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.delete-btn{
+    color: rgb(12, 202, 255);
+}
+.btns:hover{
+    box-shadow: 0 0 5px white;
+    background-color: #202847;
+}
+.fa-a{
+    margin-right: -4px;
+}
+.operand1, .operator{
+    margin: 0.3rem 0 -0.2rem 1rem;
+    font-size: 1.2rem;
+}
+.output{
+    margin: 0.3rem 0 0 1rem;
+}
+
