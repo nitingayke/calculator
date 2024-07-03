@@ -20,7 +20,7 @@ function performTask(btn) {
     
     if (((val >= 0 && val <= 9) || val === '.') && value1.length <= 15) {
         value1 += val;
-        result.innerHTML = value1;
+        result.innerHTML =cd  value1;
     } else if (['+', '-', '*', '/', '%'].includes(val)) {
         if (value1 !== '') {
             operator = val;
